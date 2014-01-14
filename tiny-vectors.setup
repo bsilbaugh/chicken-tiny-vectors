@@ -1,0 +1,10 @@
+;;;
+;;; Egg Setup Script
+;;;
+
+(compile -s -O2 -d1 "tiny-vectors.scm" -j tiny-vectors)
+(compile -s -O2 -d0 "tiny-vectors.import.scm")
+
+(install-extension
+ 'tiny-vectors
+ '("tiny-vectors.so" "tiny-vectors.import.so"))

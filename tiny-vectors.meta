@@ -1,0 +1,6 @@
+((files "tuples.setup" "tuples.scm")
+ (author "Benjamin Silbaugh")
+ (synopsis "Implementation of 3D vectors")
+ (license "BSD")
+ (needs tuples))
+
