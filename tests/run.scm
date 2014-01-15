@@ -2,8 +2,20 @@
 ;;; Tiny Vectors Test Suite
 ;;;
 
-(use test)
 (use tiny-vectors)
+
+(module tiny-fp-vectors = tiny-vectors
+  (import scheme chicken)
+  (define E+ fp+)
+  (define E- fp-)
+  (define E* fp*)
+  (define E/ fp/)
+  (define Esqrt fpsqrt))
+
+(import tiny-fp-vectors)
+
+(use test)
+
 
 (test-group "element access"
   (test 0.1 (vec-elem-1 (make-vec 0.1 0.2 0.3)))

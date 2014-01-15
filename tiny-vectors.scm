@@ -1,20 +1,15 @@
 ;;;
 ;;; Tiny Vectors
 ;;; 
-;;; An implementation of vector algebra in 3 dimensions.
+;;; A functor implementation of vector algebra in 3 dimensions.
 ;;;
 ;;; Copyright 2014 Benjamin Silbaugh
 
-(module tiny-vectors *
+(functor (tiny-vectors (M (E+ E- E* E/ Esqrt))) *
 
   (import scheme chicken)
+  (import M)
   (use tuples)
-
-  (define E+ fp+)
-  (define E- fp-)
-  (define E* fp*)
-  (define E/ fp/)
-  (define Esqrt fpsqrt)
 
 ;;; Define a 3-vector as a triple
 
