@@ -6,3 +6,24 @@ A functor implementation of vector algebra in 3 dimensions
 Copyright 2014 Benjamin Silbaugh
 
 See LICENSE file for redistribution and modification permissions.
+
+Description
+===========
+
+Tiny Vectors provides a "reasonably" efficient implementation of vector
+algebra in 3 dimensions, along with dot and cross product
+operators. Vectors are implemented using triples (see the Tuples package).
+
+Status
+======
+
+Tiny Vectors should be usable for day-to-day work. However, as with any new
+package, there may be latent coding erros. Furthermore, breaking changes to
+the language/API may occur without notice.
+
+Installation
+============
+
+Tiny Vectors is packaged as a Chicken Scheme Egg. Installation of Tiny
+Vectors should be a simple matter of downloading a copy of the source tree,
+and then installing using the chicken-install program.
