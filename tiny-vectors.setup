@@ -7,4 +7,5 @@
 
 (install-extension
  'tiny-vectors
- '("tiny-vectors.so" "tiny-vectors.import.so"))
+ '("tiny-vectors.so" "tiny-vectors.import.so")
+ '((version 0.1.0)))
