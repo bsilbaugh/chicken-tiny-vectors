@@ -8,7 +8,7 @@
 (functor (tiny-vectors (M (E+ E- E* E/ Esqrt))) *
 
   (import scheme chicken)
-  (import M)
+  (reexport M)
   (use tuples)
 
 ;;; Define a 3-vector as a triple
